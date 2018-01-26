@@ -28,7 +28,7 @@ app.set('view engine', 'handlebars');
 var routes = require("./controllers/controller.js");
 app.use("/", routes);
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/model-news-scraper";
 
 mongoose.connect(MONGODB_URI || 'mongodb://localhost/model-news-scraper');
 
